@@ -1,0 +1,7 @@
+{
+  "values": [
+    "tileman:pre_tick",
+    "tileman:tick",
+    "tileman:post_tick"
+  ]
+}
