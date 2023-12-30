@@ -15,9 +15,9 @@ execute if dimension minecraft:the_nether positioned ~ 64 ~ run summon minecraft
 execute if dimension minecraft:the_end positioned ~ 64 ~ run summon minecraft:marker ~ ~ ~ {Tags: [tileman, player2d, currentPlayer]}
 
 # If no tile marker is nearby, we need to generate one or teleport the player back
-#   ("Nearby" means within 0.5 blocks)
+#   ("Nearby" means within x blocks)
 # TODO: fix up this stuff
-execute as @e[type=marker,tag=player2d,tag=currentPlayer] at @s unless entity @e[type=marker,tag=tileMarker,distance=..2] if loaded ~ ~ ~ run function tileman:tile_init/init_tile
+execute as @e[type=marker,tag=player2d,tag=currentPlayer] at @s unless entity @e[type=marker,tag=tileMarker,distance=0] if loaded ~ ~ ~ run function tileman:tile_init/init_tile
 
 # Remove temporary tag so that it can be used by the next player
 tag @e[type=marker,tag=player2d,tag=currentPlayer] remove currentPlayer
