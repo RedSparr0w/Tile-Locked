@@ -1294,6 +1294,18 @@
 			"required": false
 		},
 		{
+			"id": "minecraft:tuff",
+			"required": false
+		},
+		{
+			"id": "minecraft:calcite",
+			"required": false
+		},
+		{
+			"id": "minecraft:amethyst_block",
+			"required": false
+		},
+		{
 			"id": "minecraft:yellow_wool",
 			"required": false
 		}

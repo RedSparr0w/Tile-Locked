@@ -11,8 +11,7 @@
 - [ ] What happens when you die and respawn in a bed with no available tiles and no unlocked tiles by the bed
     - Move player to closest tile if more than 1 block distance from last tile?
 - [ ] Tile overlays
-    - [ ] Show on top of all blocks that have non full blocks above them?
-    - [X] Add overlay to every full block
+    - [X] Show on top of all blocks that have non full blocks above them?
         - [ ] remove when block is broken
         - [ ] add when new block placed
 - [ ] Customisations
