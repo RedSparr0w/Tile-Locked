@@ -1,0 +1,24 @@
+### TODO:
+
+- [ ] Add a way to gain tiles
+    - Per x experience gained
+        - Optionally charge the XP to unlock the tiles
+    - Per x levels gained
+        - Always charge the level to unlock the tiles (levels cost more xp at higher levels)
+- [ ] Handle Nether/End travel if no available tiles
+- [ ] Only use a tile if you are touching the ground?
+    - Or using a boat
+- [ ] What happens when you die and respawn in a bed with no available tiles and no unlocked tiles by the bed
+    - Move player to closest tile if more than 1 block distance from last tile?
+- [ ] Tile overlays
+    - Show on top of all blocks that have non full blocks above them?
+    - Add overlay to every full block and remove when block is broken?
+- [ ] Customisations
+    - [ ] Choose a tile color (maybe)
+    - [ ] Choose a difficulty
+        - Easy
+            - 1 xp per tile (keep xp)
+        - Medium
+            - 5 xp per tile (uses xp)
+        - Hard
+            - 1 level per tile (uses levels)
