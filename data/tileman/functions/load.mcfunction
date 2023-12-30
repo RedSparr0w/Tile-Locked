@@ -5,18 +5,13 @@ scoreboard objectives add Uuid1 dummy
 scoreboard objectives add Uuid2 dummy
 scoreboard objectives add Uuid3 dummy
 scoreboard objectives add Uuid4 dummy
-scoreboard objectives add Temp dummy
 
 # Scoreboards for tracking chunk unlocking
-scoreboard objectives add tilemanTotalUnlockedTiles dummy
-scoreboard objectives setdisplay list tilemanTotalUnlockedTiles
-scoreboard objectives modify tilemanTotalUnlockedTiles displayname "Tiles"
-
-scoreboard objectives add tilemanTotalAvailableTiles dummy
-scoreboard objectives setdisplay list tilemanTotalAvailableTiles
-scoreboard objectives modify tilemanTotalAvailableTiles displayname "Tiles"
-
-scoreboard objectives add tilemanTickCounter dummy
+scoreboard objectives add TilemanData dummy
+scoreboard objectives setdisplay list TilemanData
+scoreboard objectives modify TilemanData displayname "=== Tileman Info ==="
+execute unless score Unlocked TilemanData matches 0.. run scoreboard players set Unlocked TilemanData 0
+execute unless score Available TilemanData matches 0.. run scoreboard players set Available TilemanData 1
 
 # Difficulty Tracker. Add 0 to global value so that its set correctly on init, then set the default value to 2 cost.
 scoreboard objectives add tilemanDifficulty dummy
