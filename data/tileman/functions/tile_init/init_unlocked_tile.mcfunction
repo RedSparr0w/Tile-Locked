@@ -7,7 +7,7 @@
 # copy(output.join('\n'))
 
 # Summon a tile on any opaque block in that x/z co-ord that does not have another opaque block above it
-# if block is opaque | unless block above is not opaque | summon tile
+# if block is opaque | unless block above is also opaque | summon tile
 execute if block ~ 320 ~ #tileman:opaque unless block ~ 321 ~ #tileman:opaque run summon block_display ~ 320 ~ {view_range: 255f, brightness: {sky: 10, block: 10}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [-0.5f, 1f, -0.5f], scale: [1f, 0.001f, 1f]}, block_state: {Name: "minecraft:lime_stained_glass"}, Tags: [tileman]}
 execute if block ~ 319 ~ #tileman:opaque unless block ~ 320 ~ #tileman:opaque run summon block_display ~ 319 ~ {view_range: 255f, brightness: {sky: 10, block: 10}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [-0.5f, 1f, -0.5f], scale: [1f, 0.001f, 1f]}, block_state: {Name: "minecraft:lime_stained_glass"}, Tags: [tileman]}
 execute if block ~ 318 ~ #tileman:opaque unless block ~ 319 ~ #tileman:opaque run summon block_display ~ 318 ~ {view_range: 255f, brightness: {sky: 10, block: 10}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [-0.5f, 1f, -0.5f], scale: [1f, 0.001f, 1f]}, block_state: {Name: "minecraft:lime_stained_glass"}, Tags: [tileman]}
