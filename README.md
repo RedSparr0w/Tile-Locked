@@ -2,10 +2,11 @@
 
 - [ ] Add a way to gain tiles
     - Per x experience gained
-        - Optionally charge the XP to unlock the tiles
+        - Charge the XP to unlock the tiles
     - Per x levels gained
-        - Always charge the level to unlock the tiles (levels cost more xp at higher levels)
+        - Charge the level to unlock the tiles (levels cost more xp at higher levels)
 - [ ] Handle Nether/End travel if no available tiles
+    - Automatically unlock 1 tile?
 - [ ] Only use a tile if you are touching the ground?
     - Or using a boat
 - [ ] What happens when you die and respawn in a bed with no available tiles and no unlocked tiles by the bed
@@ -18,8 +19,8 @@
     - [ ] Choose a tile color (maybe)
     - [ ] Choose a difficulty
         - [ ] Easy
-            - 1 xp per tile (keep xp)
+            - 1 xp per tile
         - [ ] Medium
-            - 5 xp per tile (uses xp)
+            - 5 xp per tile
         - [ ] Hard
-            - 1 level per tile (uses levels)
+            - 1 level per tile
