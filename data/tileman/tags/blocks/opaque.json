@@ -354,6 +354,10 @@
 			"required": false
 		},
 		{
+			"id": "minecraft:farmland",
+			"required": false
+		},
+		{
 			"id": "minecraft:fire_coral_block",
 			"required": false
 		},
@@ -431,6 +435,10 @@
 		},
 		{
 			"id": "minecraft:honeycomb_block",
+			"required": false
+		},
+		{
+			"id": "minecraft:copper_ore",
 			"required": false
 		},
 		{
@@ -723,6 +731,10 @@
 		},
 		{
 			"id": "minecraft:polished_granite",
+			"required": false
+		},
+		{
+			"id": "minecraft:powder_snow",
 			"required": false
 		},
 		{
@@ -1035,6 +1047,250 @@
 		},
 		{
 			"id": "minecraft:yellow_terracotta",
+			"required": false
+		},
+		{
+			"id": "minecraft:dripstone_block",
+			"required": false
+		},
+		{
+			"id": "minecraft:rooted_dirt",
+			"required": false
+		},
+		{
+			"id": "minecraft:moss_block",
+			"required": false
+		},
+		{
+			"id": "minecraft:deepslate",
+			"required": false
+		},
+		{
+			"id": "minecraft:polished_deepslate",
+			"required": false
+		},
+		{
+			"id": "minecraft:deepslate_bricks",
+			"required": false
+		},
+		{
+			"id": "minecraft:cracked_deepslate_bricks",
+			"required": false
+		},
+		{
+			"id": "minecraft:deepslate_tiles",
+			"required": false
+		},
+		{
+			"id": "minecraft:cracked_deepslate_tiles",
+			"required": false
+		},
+		{
+			"id": "minecraft:chiseled_deepslate",
+			"required": false
+		},
+		{
+			"id": "minecraft:cobbled_deepslate",
+			"required": false
+		},
+		{
+			"id": "minecraft:deepslate_coal_ore",
+			"required": false
+		},
+		{
+			"id": "minecraft:deepslate_copper_ore",
+			"required": false
+		},
+		{
+			"id": "minecraft:deepslate_lapis_lazuli_ore",
+			"required": false
+		},
+		{
+			"id": "minecraft:deepslate_iron_ore",
+			"required": false
+		},
+		{
+			"id": "minecraft:deepslate_gold_ore",
+			"required": false
+		},
+		{
+			"id": "minecraft:deepslate_redstone_ore",
+			"required": false
+		},
+		{
+			"id": "minecraft:deepslate_diamond_ore",
+			"required": false
+		},
+		{
+			"id": "minecraft:deepslate_emerald_ore",
+			"required": false
+		},
+		{
+			"id": "minecraft:raw_copper_block",
+			"required": false
+		},
+		{
+			"id": "minecraft:raw_iron_block",
+			"required": false
+		},
+		{
+			"id": "minecraft:raw_gold_block",
+			"required": false
+		},
+		{
+			"id": "minecraft:basalt",
+			"required": false
+		},
+		{
+			"id": "minecraft:polished_basalt",
+			"required": false
+		},
+		{
+			"id": "minecraft:smooth_basalt",
+			"required": false
+		},
+		{
+			"id": "minecraft:copper_block",
+			"required": false
+		},
+		{
+			"id": "minecraft:exposed_copper",
+			"required": false
+		},
+		{
+			"id": "minecraft:weathered_copper",
+			"required": false
+		},
+		{
+			"id": "minecraft:oxidized_copper",
+			"required": false
+		},
+		{
+			"id": "minecraft:cut_copper",
+			"required": false
+		},
+		{
+			"id": "minecraft:exposed_cut_copper",
+			"required": false
+		},
+		{
+			"id": "minecraft:weathered_cut_copper",
+			"required": false
+		},
+		{
+			"id": "minecraft:oxidized_cut_copper",
+			"required": false
+		},
+		{
+			"id": "minecraft:waxed_copper_block",
+			"required": false
+		},
+		{
+			"id": "minecraft:waxed_exposed_copper",
+			"required": false
+		},
+		{
+			"id": "minecraft:waxed_weathered_copper",
+			"required": false
+		},
+		{
+			"id": "minecraft:waxed_oxidized_copper",
+			"required": false
+		},
+		{
+			"id": "minecraft:waxed_cut_copper",
+			"required": false
+		},
+		{
+			"id": "minecraft:waxed_exposed_cut_copper",
+			"required": false
+		},
+		{
+			"id": "minecraft:waxed_weathered_cut_copper",
+			"required": false
+		},
+		{
+			"id": "minecraft:waxed_oxidized_cut_copper",
+			"required": false
+		},
+		{
+			"id": "minecraft:reinforced_deepslate",
+			"required": false
+		},
+		{
+			"id": "minecraft:sculk",
+			"required": false
+		},
+		{
+			"id": "minecraft:sculk_catalyst",
+			"required": false
+		},
+		{
+			"id": "minecraft:mangrove_log",
+			"required": false
+		},
+		{
+			"id": "minecraft:mangrove_planks",
+			"required": false
+		},
+		{
+			"id": "minecraft:mangrove_wood",
+			"required": false
+		},
+		{
+			"id": "minecraft:stripped_mangrove_log",
+			"required": false
+		},
+		{
+			"id": "minecraft:stripped_mangrove_wood",
+			"required": false
+		},
+		{
+			"id": "minecraft:muddy_mangrove_roots",
+			"required": false
+		},
+		{
+			"id": "minecraft:mud",
+			"required": false
+		},
+		{
+			"id": "minecraft:bamboo_block",
+			"required": false
+		},
+		{
+			"id": "minecraft:stripped_bamboo_block",
+			"required": false
+		},
+		{
+			"id": "minecraft:chiseled_bookshelf",
+			"required": false
+		},
+		{
+			"id": "minecraft:suspicious_sand",
+			"required": false
+		},
+		{
+			"id": "minecraft:suspicious_gravel",
+			"required": false
+		},
+		{
+			"id": "minecraft:cherry_log",
+			"required": false
+		},
+		{
+			"id": "minecraft:cherry_planks",
+			"required": false
+		},
+		{
+			"id": "minecraft:cherry_wood",
+			"required": false
+		},
+		{
+			"id": "minecraft:stripped_cherry_log",
+			"required": false
+		},
+		{
+			"id": "minecraft:stripped_cherry_wood",
 			"required": false
 		},
 		{
