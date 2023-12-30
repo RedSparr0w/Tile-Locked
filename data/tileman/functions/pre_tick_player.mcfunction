@@ -17,7 +17,9 @@ execute if dimension minecraft:the_end positioned ~ 64 ~ run summon minecraft:ma
 # If no tile marker is nearby, we need to generate one or teleport the player back
 #   ("Nearby" means within x blocks)
 # TODO: fix up this stuff
-execute as @e[type=marker,tag=player2d,tag=currentPlayer] at @s unless entity @e[type=marker,tag=unlocked,distance=..0.7] if loaded ~ ~ ~ run function tileman:tile_init/init_tile
+
+execute at @e[type=marker,tag=player2d,tag=currentPlayer] unless entity @e[type=marker,tag=unlocked,distance=..0.71] if loaded ~ ~ ~ if score Available TilemanData matches ..0 run function tileman:collision/exit_locked_chunk
+execute as @e[type=marker,tag=player2d,tag=currentPlayer] at @s unless entity @e[type=marker,tag=unlocked,distance=..0.71] if loaded ~ ~ ~ if score Available TilemanData matches 1.. run function tileman:tile_init/init_tile
 
 # Remove temporary tag so that it can be used by the next player
 tag @e[type=marker,tag=player2d,tag=currentPlayer] remove currentPlayer
