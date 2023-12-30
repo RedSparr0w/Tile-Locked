@@ -14,10 +14,16 @@ execute if dimension minecraft:overworld positioned ~ 128 ~ run summon minecraft
 execute if dimension minecraft:the_nether positioned ~ 64 ~ run summon minecraft:marker ~ ~ ~ {Tags: [tileman, player2d, currentPlayer]}
 execute if dimension minecraft:the_end positioned ~ 64 ~ run summon minecraft:marker ~ ~ ~ {Tags: [tileman, player2d, currentPlayer]}
 
+# Tag the current player for use within this function
+tag @s add currentPlayer
+
+execute as @e[type=marker,tag=player2d,tag=currentPlayer] at @s unless entity @e[type=marker,tag=unlocked,distance=-0..] if loaded ~ ~ ~ run function tileman:tile_init/init_tile
+
 # If no tile marker is nearby, we need to generate one or teleport the player back
 #   ("Nearby" means within 0.71 distance, corner of block is about 0.707 away from the center)
-execute at @e[type=marker,tag=player2d,tag=currentPlayer] unless entity @e[type=marker,tag=unlocked,distance=..0.71] if loaded ~ ~ ~ if score Available TilemanData matches ..0 run function tileman:collision/exit_locked_chunk
-execute as @e[type=marker,tag=player2d,tag=currentPlayer] at @s unless entity @e[type=marker,tag=unlocked,distance=..0.71] if loaded ~ ~ ~ if score Available TilemanData matches 1.. run function tileman:tile_init/init_tile
+execute if score @s TilemanData matches ..0 at @e[type=marker,tag=player2d,tag=currentPlayer] unless entity @e[type=marker,tag=unlocked,distance=..0.71] if loaded ~ ~ ~ run function tileman:collision/exit_locked_chunk
+execute if score @s TilemanData matches 1.. as @e[type=marker,tag=player2d,tag=currentPlayer] at @s unless entity @e[type=marker,tag=unlocked,distance=..0.71] if loaded ~ ~ ~ run function tileman:tile_init/init_tile
 
 # Remove temporary tag so that it can be used by the next player
 tag @e[type=marker,tag=player2d,tag=currentPlayer] remove currentPlayer
+tag @s remove currentPlayer

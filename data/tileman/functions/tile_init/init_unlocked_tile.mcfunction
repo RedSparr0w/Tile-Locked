@@ -394,5 +394,10 @@ execute if block ~ -62 ~ #tileman:opaque unless block ~ -61 ~ #tileman:opaque ru
 execute if block ~ -63 ~ #tileman:opaque unless block ~ -62 ~ #tileman:opaque run summon block_display ~ -63 ~ {view_range: 255f, brightness: {sky: 10, block: 10}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [-0.5f, 1f, -0.5f], scale: [1f, 0.001f, 1f]}, block_state: {Name: "minecraft:lime_stained_glass"}, Tags: [tileman]}
 execute if block ~ -64 ~ #tileman:opaque unless block ~ -63 ~ #tileman:opaque run summon block_display ~ -64 ~ {view_range: 255f, brightness: {sky: 10, block: 10}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [-0.5f, 1f, -0.5f], scale: [1f, 0.001f, 1f]}, block_state: {Name: "minecraft:lime_stained_glass"}, Tags: [tileman]}
 
-scoreboard players remove Available TilemanData 1
+# Add 1 to the amount of unlocked tiles
 scoreboard players add Unlocked TilemanData 1
+
+# Remove XP/Level from player unlocking the tile
+execute if score #difficulty TilemanData matches 0 run xp add @p[tag=currentPlayer] -1
+execute if score #difficulty TilemanData matches 1 run xp add @p[tag=currentPlayer] -5
+execute if score #difficulty TilemanData matches 2 run xp add @p[tag=currentPlayer] -1 levels
