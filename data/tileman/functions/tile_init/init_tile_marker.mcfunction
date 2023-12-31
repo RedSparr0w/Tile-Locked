@@ -7,8 +7,6 @@ execute store result entity @s Pos[2] double 1 run scoreboard players get @s Pos
 
 execute at @s run teleport ~0.5 ~ ~0.5
 
-execute as @s at @s run particle minecraft:electric_spark ~ 64.1 ~
-
 # Tiles that are unlocked should be marked as unlocked
 tag @s[tag=!locked,tag=!unlocked] add unlocked
 

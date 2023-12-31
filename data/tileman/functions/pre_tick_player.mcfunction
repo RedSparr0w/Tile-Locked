@@ -17,6 +17,9 @@ execute if dimension minecraft:the_end positioned ~ 64 ~ run summon minecraft:ma
 # Tag the current player for use within this function
 tag @s add currentPlayer
 
+# Update our available tiles
+function tileman:tile_availability/calc_available_tiles
+
 execute as @e[type=marker,tag=player2d,tag=currentPlayer] at @s unless entity @e[type=marker,tag=unlocked,distance=-0..] if loaded ~ ~ ~ run function tileman:tile_init/init_tile
 
 # If no tile marker is nearby, we need to generate one or teleport the player back

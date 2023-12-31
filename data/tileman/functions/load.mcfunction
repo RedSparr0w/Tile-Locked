@@ -14,7 +14,8 @@ scoreboard objectives setdisplay list TilemanData
 scoreboard objectives modify TilemanData displayname "=== Tileman Info ==="
 execute unless score #difficulty TilemanData matches 0.. run scoreboard players set #difficulty TilemanData 0
 execute unless score Unlocked TilemanData matches 0.. run scoreboard players set Unlocked TilemanData 0
-scoreboard players set #cost5 TilemanData 5
+execute unless score #cost5 TilemanData matches 5 scoreboard players set #cost5 TilemanData 5
+execute unless score #ticks TilemanData matches 0.. scoreboard players set #ticks TilemanData 0
 scoreboard objectives setdisplay sidebar TilemanData
 
 # Scoreboard for trigger commands
