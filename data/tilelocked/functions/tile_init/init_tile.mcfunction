@@ -11,4 +11,4 @@ execute if score #difficulty TileLockedData matches 1 run xp add @p[tag=currentP
 execute if score #difficulty TileLockedData matches 2 run xp add @p[tag=currentPlayer] -1 levels
 
 # Play a noise
-execute if score #unlockSound TileLockedData matches 1 run playsound minecraft:block.note_block.bell music @p[tag=currentPlayer]
+execute if score #unlockSound TileLockedData matches 1 at @p[tag=currentPlayer] run playsound minecraft:block.note_block.bell ambient @p[tag=currentPlayer]
