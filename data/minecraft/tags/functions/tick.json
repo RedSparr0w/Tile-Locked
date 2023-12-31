@@ -1,7 +1,7 @@
 {
   "values": [
-    "tileman:pre_tick",
-    "tileman:tick",
-    "tileman:post_tick"
+    "tilelocked:pre_tick",
+    "tilelocked:tick",
+    "tilelocked:post_tick"
   ]
 }
