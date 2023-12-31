@@ -7,13 +7,14 @@ scoreboard objectives add TileLockedData dummy
 scoreboard objectives setdisplay list TileLockedData
 scoreboard objectives modify TileLockedData displayname "=== Tile Locked ==="
 execute unless score #difficulty TileLockedData matches 0.. run scoreboard players set #difficulty TileLockedData 0
+execute unless score #unlockSound TileLockedData matches 0.. run scoreboard players set #unlockSound TileLockedData 1
 execute unless score Unlocked TileLockedData matches 0.. run scoreboard players set Unlocked TileLockedData 0
 execute unless score #cost5 TileLockedData matches 5 run scoreboard players set #cost5 TileLockedData 5
 execute unless score #ticks TileLockedData matches 0.. run scoreboard players set #ticks TileLockedData 0
 scoreboard objectives setdisplay sidebar TileLockedData
 
 # Scoreboard for trigger commands
-scoreboard objectives add TileCost trigger
+scoreboard objectives add TileLockedSettings trigger
 
 # Force players to spawn around a single block to prevent spawning outside an unlocked tile
 gamerule spawnRadius 0

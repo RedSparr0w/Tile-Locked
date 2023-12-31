@@ -9,7 +9,7 @@
     - Automatically unlock 1 tile if no nearby tiles
         - Can still cause you to be stuck in nether portal
 - [ ] Only use a tile if you are touching the ground?
-    - Or using a boat
+    - Or using a boat?
 - [X] What happens when you die and respawn in a bed with no available tiles and no unlocked tiles by the bed
     - Move player to closest tile if more than 1 block distance from last tile?
 - [X] Tile overlays
@@ -18,7 +18,8 @@
         - [X] add when new block placed
 - [ ] Customisations
     - [ ] Choose a tile color (maybe)
-    - [ ] Choose a difficulty
+    - [X]] Choose if tile unlock sound enabled
+    - [X] Choose a difficulty
         - [X] Easy
             - 1 xp per tile
         - [X] Medium
