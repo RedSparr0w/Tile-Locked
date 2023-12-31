@@ -10,9 +10,7 @@
 #   Overworld:   -64 to 319
 #   Nether:        0 to 127
 #   End:           0 to 255
-execute if dimension minecraft:overworld positioned ~ 128 ~ run summon minecraft:marker ~ ~ ~ {Tags: [tileman, player2d, currentPlayer]}
-execute if dimension minecraft:the_nether positioned ~ 64 ~ run summon minecraft:marker ~ ~ ~ {Tags: [tileman, player2d, currentPlayer]}
-execute if dimension minecraft:the_end positioned ~ 64 ~ run summon minecraft:marker ~ ~ ~ {Tags: [tileman, player2d, currentPlayer]}
+summon minecraft:marker ~ 64 ~ {Tags: [tileman, player2d, currentPlayer]}
 
 # Tag the current player for use within this function
 tag @s add currentPlayer
@@ -20,9 +18,10 @@ tag @s add currentPlayer
 # Update our available tiles
 function tileman:tile_availability/calc_available_tiles
 
+# Mark tile as unlocked if player has no tiles unlocked in close by (no loaded chunks, different dimension)
 execute as @e[type=marker,tag=player2d,tag=currentPlayer] at @s unless entity @e[type=marker,tag=unlocked,distance=-0..] if loaded ~ ~ ~ run function tileman:tile_init/init_tile
 
-# If no tile marker is nearby, we need to generate one or teleport the player back
+# If no tile marker is nearby, we need to unlock one or teleport the player back to the nearest unlocked tile
 #   ("Nearby" means within 0.71 distance, corner of block is about 0.707 away from the center)
 execute if score @s TilemanData matches ..0 at @e[type=marker,tag=player2d,tag=currentPlayer] unless entity @e[type=marker,tag=unlocked,distance=..0.71] at @s positioned ~ ~-1 ~ as @e[type=minecraft:block_display,tag=tileman,distance=0..,sort=nearest,limit=1] at @e[type=minecraft:block_display,tag=tileman,distance=0..,sort=nearest,limit=1] run teleport @p[tag=currentPlayer] ~ ~1 ~
 execute if score @s TilemanData matches 1.. as @e[type=marker,tag=player2d,tag=currentPlayer] at @s unless entity @e[type=marker,tag=unlocked,distance=..0.71] if loaded ~ ~ ~ run function tileman:tile_init/init_tile

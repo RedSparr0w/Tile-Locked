@@ -13,8 +13,8 @@
     - Move player to closest tile if more than 1 block distance from last tile?
 - [ ] Tile overlays
     - [X] Show on top of all blocks that have non full blocks above them?
-        - [ ] remove when block is broken
-        - [ ] add when new block placed
+        - [X] remove when block is broken
+        - [X] add when new block placed
         - [ ] only check y level based on dimension
 - [ ] Customisations
     - [ ] Choose a tile color (maybe)
