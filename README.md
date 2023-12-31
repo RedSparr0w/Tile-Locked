@@ -42,7 +42,7 @@ Simply add the datapack to your world saves datapacks folder.
         - [X] add when new block placed
 - [ ] Customisations
     - [ ] Choose a tile color (maybe)
-    - [X]] Choose if tile unlock sound enabled
+    - [X] Choose if tile unlock sound enabled
     - [X] Choose a difficulty
         - [X] Easy
             - 1 xp per tile
