@@ -7,15 +7,15 @@
         - [X] Charge the level to unlock the tiles (levels cost more xp at higher levels)
 - [X] Handle Nether/End travel if no available tiles
     - Automatically unlock 1 tile if no nearby tiles
+        - Can still cause you to be stuck in nether portal
 - [ ] Only use a tile if you are touching the ground?
     - Or using a boat
 - [X] What happens when you die and respawn in a bed with no available tiles and no unlocked tiles by the bed
     - Move player to closest tile if more than 1 block distance from last tile?
-- [ ] Tile overlays
+- [X] Tile overlays
     - [X] Show on top of all blocks that have non full blocks above them?
         - [X] remove when block is broken
         - [X] add when new block placed
-        - [ ] only check y level based on dimension
 - [ ] Customisations
     - [ ] Choose a tile color (maybe)
     - [ ] Choose a difficulty

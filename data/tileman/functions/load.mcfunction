@@ -1,10 +1,4 @@
 # Create scoreboards
-scoreboard objectives add PosX dummy
-scoreboard objectives add PosZ dummy
-scoreboard objectives add Uuid1 dummy
-scoreboard objectives add Uuid2 dummy
-scoreboard objectives add Uuid3 dummy
-scoreboard objectives add Uuid4 dummy
 scoreboard objectives add TilemanXp dummy
 scoreboard objectives add TilemanLevel dummy
 
