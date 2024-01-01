@@ -1358,6 +1358,14 @@
 			"required": false
 		},
 		{
+			"id": "minecraft:soul_sand",
+			"required": false
+		},
+		{
+			"id": "minecraft:glowstone",
+			"required": false
+		},
+		{
 			"id": "minecraft:yellow_wool",
 			"required": false
 		}
