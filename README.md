@@ -1,4 +1,4 @@
-![TileLockedLogo](https://github.com/RedSparr0w/Tile-Locked/assets/7288322/642a28e1-ae91-4512-9ebd-39236a73e135)
+![TileLockedLogo](https://github.com/RedSparr0w/Tile-Locked/assets/7288322/cdb52453-e006-4b19-ad17-eb17c4cfcd25)
 
 # About
 Tile Locked is a Minecraft datapack that draws inspiration from [ChunkLock](https://modrinth.com/datapack/chunklock) and the Old School RuneScape [Tileman Mode](https://runelite.net/plugin-hub/show/tilemanmode), offering players a unique and challenging gameplay experience.
@@ -7,16 +7,15 @@ The core mechanic of Tile Locked revolves around the incremental unlocking of th
 
 This adds an extra layer of strategy and preparation, as players must carefully choose which tiles to unlock first, considering the resources and challenges needed to progress.
 
-![2023-12-31_20 30 24](https://github.com/RedSparr0w/Tile-Locked/assets/7288322/503bfdb2-5cbf-4458-b898-2a84ee73caf1)
-![2023-12-31_20 19 02](https://github.com/RedSparr0w/Tile-Locked/assets/7288322/e019563b-d736-44a6-ac13-2a08d2577fda)
-![2023-12-31_19 43 27](https://github.com/RedSparr0w/Tile-Locked/assets/7288322/a055fc60-41e8-4eef-94d9-b6e99fda2e29)
-![2023-12-31_20 05 49](https://github.com/RedSparr0w/Tile-Locked/assets/7288322/7177d3aa-7397-4cb0-99ba-3de0fe150370)
-
+![image](https://github.com/RedSparr0w/Tile-Locked/assets/7288322/27338676-1005-4c84-8024-15ed7218d5ee)
+![image](https://github.com/RedSparr0w/Tile-Locked/assets/7288322/2b32a473-a983-40a5-95c1-1d7f9a64a087)
+![image](https://github.com/RedSparr0w/Tile-Locked/assets/7288322/67cbab2b-9378-400c-afc2-909372377057)
+![image](https://github.com/RedSparr0w/Tile-Locked/assets/7288322/f7d17922-c7aa-4b04-bf53-9e26d070a32f)
 
 # Commands
 View and change settings:
 `/trigger TileLockedSettings`
-![image](https://github.com/RedSparr0w/Tile-Locked/assets/7288322/38f23f4a-5a34-4b5b-8d75-5ac3998ee4ee)
+![image](https://github.com/RedSparr0w/Tile-Locked/assets/7288322/d6c9cb3a-33f6-4880-9619-550f7f1bb466)
 
 
 # Installation
