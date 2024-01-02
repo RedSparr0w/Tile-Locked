@@ -6,9 +6,9 @@ execute as @e[type=marker,tag=tileMarker,tag=unlocked,distance=..1.1,sort=neares
 scoreboard players add Unlocked TileLockedData 1
 
 # Remove XP/Level from player unlocking the tile
-execute if score #difficulty TileLockedData matches 0 run xp add @p[tag=currentPlayer] -1
-execute if score #difficulty TileLockedData matches 1 run xp add @p[tag=currentPlayer] -5
-execute if score #difficulty TileLockedData matches 2 run xp add @p[tag=currentPlayer] -1 levels
+execute if score #difficulty TileLockedData matches 0 run xp add @a[tag=currentPlayer] -1
+execute if score #difficulty TileLockedData matches 1 run xp add @a[tag=currentPlayer] -5
+execute if score #difficulty TileLockedData matches 2 run xp add @a[tag=currentPlayer] -1 levels
 
 # Play a noise
-execute if score #unlockSound TileLockedData matches 1 at @p[tag=currentPlayer] run playsound minecraft:block.note_block.bell ambient @p[tag=currentPlayer]
+execute if score #unlockSound TileLockedData matches 1 at @a[tag=currentPlayer] run playsound minecraft:block.note_block.bell ambient @a[tag=currentPlayer]
