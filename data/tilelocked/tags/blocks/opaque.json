@@ -1366,6 +1366,10 @@
 			"required": false
 		},
 		{
+			"id": "minecraft:dirt_path",
+			"required": false
+		},
+		{
 			"id": "minecraft:yellow_wool",
 			"required": false
 		}
