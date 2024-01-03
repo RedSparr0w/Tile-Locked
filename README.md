@@ -15,8 +15,7 @@ This adds an extra layer of strategy and preparation, as players must carefully 
 # Commands
 View and change settings:
 `/trigger TileLockedSettings`
-![image](https://github.com/RedSparr0w/Tile-Locked/assets/7288322/d6c9cb3a-33f6-4880-9619-550f7f1bb466)
-
+![image](https://github.com/RedSparr0w/Tile-Locked/assets/7288322/5464e59b-2863-4f65-95ef-d5e10949dd09)
 
 # Installation
 Simply add the datapack to your world saves datapacks folder.
