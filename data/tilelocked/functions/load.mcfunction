@@ -1,6 +1,10 @@
 # Create scoreboards
 scoreboard objectives add TileLockedXp dummy
 scoreboard objectives add TileLockedLevel dummy
+scoreboard objectives add Uuid1 dummy
+scoreboard objectives add Uuid2 dummy
+scoreboard objectives add Uuid3 dummy
+scoreboard objectives add Uuid4 dummy
 
 # Scoreboards for tracking tile unlocking
 scoreboard objectives add TileLockedData dummy
