@@ -16,6 +16,7 @@ execute unless score Unlocked TileLockedData matches 0.. run scoreboard players 
 execute unless score #cost5 TileLockedData matches 5 run scoreboard players set #cost5 TileLockedData 5
 execute unless score #ticks TileLockedData matches 0.. run scoreboard players set #ticks TileLockedData 0
 execute unless score #tileColor TileLockedData matches 0.. run scoreboard players set #tileColor TileLockedData 9
+execute unless score #version TileLockedData matches 0.. run scoreboard players set #version TileLockedData 1
 scoreboard objectives setdisplay sidebar TileLockedData
 
 # Scoreboard for trigger commands
